@@ -4,7 +4,7 @@ import { headers } from './static-resources'
 
 export const MenuOptions = ({ onCollapse, className }) => {
   return (
-    <div className={`absolute top-0 right-0 h-screen w-[300px] backdrop-blur-2xl backdrop-brightness-125 ${className}`}>
+    <div className={`absolute top-0 right-0 w-[300px] h-screen backdrop-blur-2xl backdrop-brightness-100 ${className}`}>
       <div className='w-full pt-10 pr-6 flex justify-end'>
         <img className='cursor-pointer' src='/icons/x-mark.svg' alt='x-mark' onClick={onCollapse} />
       </div>

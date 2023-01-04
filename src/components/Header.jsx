@@ -8,8 +8,8 @@ export const Header = () => {
   const [isMenuCollapsed, setIsMenuCollapsed] = useState(false)
   return (
     <>
-      <div className='w-full px-6 pt-6 lg:px-10 lg:pt-14 flex justify-between items-center'>
-        <div>
+      <div className='relative w-full px-6 pt-6 lg:pl-10 lg:pr-0 lg:pt-14 flex justify-between items-center'>
+        <div className='hover:backdrop-brightness-150'>
           <img src='/icons/star.svg' />
         </div>
         <div className='hidden w-full h-[96px] lg:flex justify-end'>
@@ -28,7 +28,7 @@ export const Header = () => {
         <div className={`${isMenuCollapsed ? 'hidden' : 'md:hidden'} cursor-pointer`} onClick={() => setIsMenuCollapsed(!isMenuCollapsed)}>
           <img src='/icons/menu.svg' />
         </div>
-        {isMenuCollapsed && <MenuOptions onCollapse={() => setIsMenuCollapsed((_) => !_)} isMenuCollapsed={isMenuCollapsed} />}
+        <MenuOptions onCollapse={() => setIsMenuCollapsed((_) => !_)} isMenuCollapsed={isMenuCollapsed} className={`${isMenuCollapsed ? 'md:hidden' : 'hidden'}`} />
       </div>
     </>
   )
