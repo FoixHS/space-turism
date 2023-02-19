@@ -1,4 +1,3 @@
-import React from 'react'
 import { Header } from '../components/Header'
 import { HomeContent } from '../components/HomeContent'
 import { Template } from '../components/Template'
