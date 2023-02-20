@@ -35,7 +35,6 @@ export const TechnologyDetail = () => {
           <p className='text-[#D0D6F9] md:text-lg xl:text-xl font-barlow leading-6 md:leading-7'>{technologies[optionSelected].description}</p>
         </div>
       </div>
-
     </div>
   )
 }
