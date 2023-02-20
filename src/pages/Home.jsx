@@ -1,10 +1,10 @@
-import { Header } from '../components/Header'
+import { Header } from '../components/header/Header'
 import { HomeContent } from '../components/HomeContent'
 import { Template } from '../components/Template'
 
 const Home = () => {
   return (
-    <Template className="bg-[url('/images/home-mobile.png')] lg:bg-[url('/images/home.png')] bg-no-repeat bg-cover">
+    <Template className="bg-[url('/images/home/mobile.jpg')] md:bg-[url('/images/home/tablet.jpg')] lg:bg-[url('/images/home/desktop.jpg')] bg-no-repeat bg-cover">
       <Header />
       <HomeContent />
     </Template>

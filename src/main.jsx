@@ -11,6 +11,7 @@ import './index.css'
 // pages
 import Oops from './pages/Oops'
 import Home from './pages/Home'
+import Destination from './pages/Destinations'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/destination',
-    element: <Home />,
+    element: <Destination />,
     errorElement: <Oops />
   },
   {

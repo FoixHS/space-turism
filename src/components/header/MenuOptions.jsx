@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { headers } from './static-resources'
+import { headers } from '../../helpers/static-resources'
 
 export const MenuOptions = ({ onCollapse, className }) => {
   return (
