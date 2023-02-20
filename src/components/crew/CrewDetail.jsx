@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { crew } from '../../helpers/static-resources'
 import { CrewSelector } from './CrewSelector'
+import { crew } from '../../helpers/static-resources'
 
 export const CrewDetail = () => {
   const [optionSelected, setOptionSelected] = useState(crew[0].id)

@@ -13,6 +13,7 @@ import Oops from './pages/Oops'
 import Home from './pages/Home'
 import Destination from './pages/Destinations'
 import Crew from './pages/Crew'
+import Technology from './pages/Technology'
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/technology',
-    element: <Home />,
+    element: <Technology />,
     errorElement: <Oops />
   }
 ])

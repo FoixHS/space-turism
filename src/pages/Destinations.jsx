@@ -2,7 +2,7 @@ import { Header } from '../components/header/Header'
 import { DestinationContent } from '../components/destination/DestinationContent'
 import { Template } from '../components/Template'
 
-const Home = () => {
+const Destination = () => {
   return (
     <Template
       className="bg-[url('/images/destination/mobile.jpg')]
@@ -16,4 +16,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Destination

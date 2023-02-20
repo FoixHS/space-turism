@@ -2,7 +2,7 @@ import { Header } from '../components/header/Header'
 import { CrewContent } from '../components/crew/CrewContent'
 import { Template } from '../components/Template'
 
-const Home = () => {
+const Crew = () => {
   return (
     <Template
       className="bg-[url('/images/crew/mobile.jpg')]
@@ -16,4 +16,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Crew

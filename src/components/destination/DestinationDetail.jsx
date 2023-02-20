@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { destinations } from '../../helpers/static-resources'
-import { DestinationMetadata } from './DestinationMetadata'
 import { DestinationSelector } from './DestinationSelector'
+import { DestinationMetadata } from './DestinationMetadata'
+import { destinations } from '../../helpers/static-resources'
 
 export const DestinationDetail = () => {
   const [optionSelected, setOptionSelected] = useState(destinations[0].id)
