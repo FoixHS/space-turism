@@ -4,7 +4,12 @@ import { Template } from '../components/Template'
 
 const Home = () => {
   return (
-    <Template className="bg-[url('/images/destination/mobile.jpg')] md:bg-[url('/images/destination/tablet.jpg')] lg:bg-[url('/images/destination/desktop.jpg')] bg-no-repeat bg-cover">
+    <Template
+      className="bg-[url('/images/destination/mobile.jpg')]
+        md:bg-[url('/images/destination/tablet.jpg')]
+        lg:bg-[url('/images/destination/desktop.jpg')]
+        bg-no-repeat bg-cover"
+    >
       <Header />
       <DestinationContent />
     </Template>

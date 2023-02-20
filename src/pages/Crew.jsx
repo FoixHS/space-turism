@@ -1,17 +1,17 @@
 import { Header } from '../components/header/Header'
-import { HomeContent } from '../components/HomeContent'
+import { CrewContent } from '../components/crew/CrewContent'
 import { Template } from '../components/Template'
 
 const Home = () => {
   return (
     <Template
-      className="bg-[url('/images/home/mobile.jpg')]
-        md:bg-[url('/images/home/tablet.jpg')]
-        lg:bg-[url('/images/home/desktop.jpg')]
+      className="bg-[url('/images/crew/mobile.jpg')]
+        md:bg-[url('/images/crew/tablet.jpg')]
+        lg:bg-[url('/images/crew/desktop.jpg')]
         bg-no-repeat bg-cover"
     >
       <Header />
-      <HomeContent />
+      <CrewContent />
     </Template>
   )
 }

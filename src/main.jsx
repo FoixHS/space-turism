@@ -12,6 +12,7 @@ import './index.css'
 import Oops from './pages/Oops'
 import Home from './pages/Home'
 import Destination from './pages/Destinations'
+import Crew from './pages/Crew'
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/crew',
-    element: <Home />,
+    element: <Crew />,
     errorElement: <Oops />
   },
   {
