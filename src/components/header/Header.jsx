@@ -35,7 +35,7 @@ export const Header = () => {
         <div className={`${isMenuCollapsed ? 'hidden' : 'lg:hidden'} cursor-pointer`} onClick={() => setIsMenuCollapsed(!isMenuCollapsed)}>
           <img src='/icons/menu.svg' />
         </div>
-        <MenuOptions onCloseMenu={onCloseMenu} isMenuCollapsed={isMenuCollapsed} className={`${isMenuCollapsed ? 'lg:hidden' : 'hidden'}`} />
+        <MenuOptions onCloseMenu={onCloseMenu} className={`${isMenuCollapsed ? 'lg:hidden' : 'hidden'}`} />
       </nav>
     </>
 
