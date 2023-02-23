@@ -1,9 +1,9 @@
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { headers } from '../../helpers/static-resources'
 import { LanguageSelector } from './LanguageSelector'
 
-export const MenuOptions = ({ onCloseMenu, className }) => {
+export const MenuOptions = ({ onCloseMenu, isMenuCollapsed, className }) => {
   const body = document.querySelector('body')
   const closeMenu = useCallback(() => {
     body.style.overflow = 'auto'
@@ -12,8 +12,19 @@ export const MenuOptions = ({ onCloseMenu, className }) => {
     }
   }, [body.style, onCloseMenu])
 
+  useEffect(() => {
+    const sidebar = document.querySelector('#sidebar')
+    const onClose = () => {
+      if (isMenuCollapsed && !sidebar.className.includes('hidden')) {
+        closeMenu()
+      }
+    }
+    window.addEventListener('click', onClose)
+    return () => window.addEventListener('click', onClose)
+  }, [closeMenu, isMenuCollapsed])
+
   return (
-    <div className={`z-100 fixed top-0 right-0 w-[300px] h-screen backdrop-blur-2xl backdrop-brightness-100 ${className}`}>
+    <div id='sidebar' className={`z-100 fixed top-0 right-0 w-[300px] h-screen backdrop-blur-2xl backdrop-brightness-100 ${className}`}>
       <div className='w-full pt-10 pr-6 flex justify-end'>
         <img className='cursor-pointer' src='/icons/x-mark.svg' alt='x-mark' onClick={closeMenu} />
       </div>
