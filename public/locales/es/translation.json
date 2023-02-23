@@ -1,8 +1,78 @@
 {
+  "crew":{
+    "anousheh": {
+      "description": "Anousheh Ansari es una ingeniera iraní-estadounidense cofundadora de Prodea Systems. Ansari fue la cuarta turista espacial autofinanciada, la primera mujer autofinanciada que voló a la ISS y la primera iraní en el espacio.",
+      "rol": "Ingeniera de vuelo"
+    },
+    "douglas": {
+      "description": "Douglas Gerald Hurley es un ingeniero estadounidense, ex piloto del Cuerpo de Marines y ex astronauta de la NASA. Lanzó al espacio por tercera vez como comandante de la Crew Dragon Demo-2.",
+      "rol": "Comandante"
+    },
+    "mark": {
+      "description": "Mark Richard Shuttleworth es el fundador y Consejero Delegado de Canonical, la empresa que está detrás del sistema operativo Ubuntu, basado en Linux. Shuttleworth fue el primer sudafricano en viajar al espacio como turista espacial.",
+      "rol": "Especialista en misiones"
+    },
+    "title": "Conoce a tu tripulación",
+    "victor": {
+      "description":"Piloto del primer vuelo operativo de la nave Crew Dragon de SpaceX a la Estación Espacial Internacional. Glover es comandante de la Marina estadounidense, donde pilota un F/A-18. Fue miembro de la tripulación de la Expedición 64 y trabajó como ingeniero de vuelo de sistemas de la estación.",
+      "rol": "Piloto"
+    }
+  },
+  "destination": {
+    "averageDistance": "Distancia media",
+    "estimatedTime": "Tiempo est. de viaje",
+    "options": {
+      "europa": {
+        "description": "Europa, la más pequeña de las cuatro lunas galileanas que orbitan alrededor de Júpiter, es el sueño de cualquier amante del invierno. Con una superficie helada, es perfecta para patinar sobre hielo",
+        "label": "Europa",
+        "time": "3 AÑOS"
+      },
+      "mars": {
+        "description": "No olvides las botas de montaña. Las necesitarás para enfrentarte al monte Olimpo, la montaña planetaria más alta de nuestro sistema solar. Tiene dos veces y media el tamaño del Everest.",
+        "label": "Marte",
+        "time": "9 MESES"
+      },
+      "moon": {
+        "description": "Vea nuestro planeta como nunca antes. Un viaje relajante perfecto para recuperar la perspectiva y volver renovado. Mientras esté allí, descubra un poco de historia visitando los lugares de aterrizaje del Luna 2 y el Apolo 11.",
+        "label": "Luna",
+        "time": "3 DIAS"
+      },
+      "titan": {
+        "description": "Titán, la única luna con atmósfera densa que no es la Tierra, es un hogar lejos de casa (¡sólo unos cientos de grados más fría!). Además, podrás contemplar los Anillos de Saturno.",
+        "label": "Titan",
+        "time": "7 AÑOS"
+      }
+    },
+    "title": "Elije tu destino"
+  },
+  "header": {
+    "crew": "Tripulación",
+    "destination": "Destinos",
+    "home": "Principal",
+    "technology": "Tecnología"
+  },
   "home": {
-    "title": "ASÍ QUE QUIERES VIAJAR AL",
-    "label": "ESPACIO",
     "description": "Admitámoslo: si quieres ir al espacio, lo mejor es que vayas de verdad al espacio exterior y no te quedes flotando al borde de él. Siéntese y relájese, porque le ofreceremos una experiencia fuera de este mundo.",
-    "explore": "EXPLORAR"
+    "explore": "EXPLORAR",
+    "label": "ESPACIO",
+    "title": "ASÍ QUE QUIERES VIAJAR AL"
+  },
+  "technology": {
+    "capsule": {
+      "description": "Una cápsula espacial es una nave espacial a menudo tripulada que utiliza una cápsula de reentrada de cuerpo romo para reentrar en la atmósfera terrestre sin alas. Nuestra cápsula es donde pasará su tiempo durante el vuelo. Incluye un gimnasio espacial, cine y muchas otras actividades para mantenerle entretenido.",
+      "name": "Cápsula espacial"
+    },
+    "spaceport": {
+      "description": "Un puerto espacial o cosmódromo es un lugar de lanzamiento (o recepción) de naves espaciales, por analogía con el puerto marítimo para los buques o el aeropuerto para los aviones. Con sede en el famoso Cabo Cañaveral, nuestro puerto espacial está idealmente situado para aprovechar la rotación de la Tierra para el lanzamiento.",
+      "name": "Puerto espacial"
+    },
+    "terminologies": {
+      "label": "LA TERMINOLOGÍA..."
+    },
+    "title": "Lanzamiento espacial 101",
+    "vehicle": {
+      "description": "Un vehículo de lanzamiento o cohete portador es un vehículo propulsado por cohete que se utiliza para transportar una carga útil desde la superficie de la Tierra al espacio, normalmente a la órbita terrestre o más allá. Nuestro cohete portador WEB-X es el más potente que existe. Con sus 150 metros de altura, es un espectáculo impresionante en la plataforma de lanzamiento.",
+      "name": "Vehículo de lanzamiento"
+    }
   }
 }

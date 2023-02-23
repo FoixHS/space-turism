@@ -1,9 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import { DestinationSelector } from './DestinationSelector'
 import { DestinationMetadata } from './DestinationMetadata'
-import { destinations } from '../../helpers/static-resources'
 
-export const DestinationDetail = () => {
+export const DestinationDetail = ({ destinations }) => {
+  const { t } = useTranslation()
   const [optionSelected, setOptionSelected] = useState(destinations[0].id)
 
   return (
@@ -23,8 +24,8 @@ export const DestinationDetail = () => {
             <p className='max-w-[327px] md:max-w-full lg:pr-5 mt-3 text-center lg:text-left text-[#D0D6F9] text-sm md:text-lg lg:text-xl leading-6 md:leading-8 lg:leading-10 font-barlow tracking-wide'>{destinations[optionSelected].description}</p>
           </div>
           <div className='pt-8 md:pt-12 flex flex-col md:flex-row md:justify-evenly lg:justify-start md:items-center space-y-8 md:space-y-0 lg:space-x-20'>
-            <DestinationMetadata title='Avg. distance' stats={destinations[optionSelected].distance} />
-            <DestinationMetadata title='Est. travel time' stats={destinations[optionSelected].timeDuration} />
+            <DestinationMetadata title={t('destination.averageDistance')} stats={destinations[optionSelected].distance} />
+            <DestinationMetadata title={t('destination.estimatedTime')} stats={destinations[optionSelected].timeDuration} />
           </div>
         </div>
       </div>

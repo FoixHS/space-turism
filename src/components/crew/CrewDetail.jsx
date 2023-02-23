@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { CrewSelector } from './CrewSelector'
-import { crew } from '../../helpers/static-resources'
 
-export const CrewDetail = () => {
+export const CrewDetail = ({ crew }) => {
   const [optionSelected, setOptionSelected] = useState(crew[0].id)
   return (
     <div className='md:h-full pt-8 flex flex-col md:flex-col-reverse lg:flex-row-reverse md:justify-between divide-y md:divide-none divide-solid divide-[#383B4B]'>
