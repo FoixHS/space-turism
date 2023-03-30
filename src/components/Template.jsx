@@ -1,5 +1,3 @@
 export const Template = ({ children, className }) => {
-  return (
-    <main className={`w-full h-screen ${className}`}>{children}</main>
-  )
+  return <main className={`w-full h-full min-h-screen ${className}`}>{children}</main>
 }

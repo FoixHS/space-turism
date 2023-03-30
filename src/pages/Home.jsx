@@ -8,7 +8,7 @@ const Home = () => {
       className="bg-[url('/images/home/mobile.jpg')]
         md:bg-[url('/images/home/tablet.jpg')]
         lg:bg-[url('/images/home/desktop.jpg')]
-        bg-no-repeat bg-cover"
+        bg-no-repeat bg-cover relative"
     >
       <Header />
       <HomeContent />

@@ -23,7 +23,7 @@ export const Header = () => {
           <ul className='flex text-white gap-12'>
             {headers().map((header) => {
               return (
-                <li className={`py-10 h-full flex items-center justify-center uppercase ${optionSelected === header.title && 'border-b-2 border-white'}`} key={header.id}>
+                <li className={`py-10 h-full flex items-center justify-center uppercase ${optionSelected === header.title.toLowerCase() && 'border-b-2 border-white'}`} key={header.id}>
                   <Link to={header.path}>
                     <span className='pr-2 font-bold'>{header.id}</span>{header.title}
                   </Link>
